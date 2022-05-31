@@ -1,0 +1,29 @@
+
+
+services:
+  app:
+    container_name: tenis-ranking
+    build: .
+    restart: always
+    ports:
+      - "3001:3001"
+    command: "sh -c 'npm install && npm start'"
+    volumes:
+      - .:/app
+
+  postgresql:
+    container_name: tenis-ranking-db
+    image: bitnami/postgresql
+    restart: always
+    ports:
+      - '5432:5432'
+    environment:
+      - POSTGRESQL_USERNAME=docker
+      - POSTGRESQL_PASSWORD=docker
+      - POSTGRESQL_DATABASE=tenis_ranking
+    volumes:
+      - 'postgresql_data:/bitnami/postgresql'
+
+volumes:
+  postgresql_data:
+      driver: local
