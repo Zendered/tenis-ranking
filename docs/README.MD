@@ -1,8 +1,8 @@
 # Tenis ranking 🎾
 
-## Tecnologias usada
+## Tecnologias usada ⚙️
 
-### Framework
+### Framework 
 * [NestJS](https://github.com/nestjs/nest)
 
 ### Ferramentas
@@ -12,7 +12,7 @@
 * [Jwt](https://jwt.io/)
 * [Swagger](https://swagger.io/)
 
-## Como usar
+## Como usar 🧑‍💻
 
 
-## EM DESENVOLVIMENTO
+## EM DESENVOLVIMENTO ⚠️
