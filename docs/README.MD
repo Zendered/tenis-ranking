@@ -1,5 +1,5 @@
 # Tennis ranking 🎾
-![tennis ball](./ball.png)
+
 ## Tecnologias usada ⚙️
 
 ### Framework 
