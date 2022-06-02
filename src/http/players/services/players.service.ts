@@ -13,7 +13,7 @@ export class PlayersService {
 
   async addPlayer(userData: CreatePlayerDTO) {
     const exists = await this.prisma.player.findUnique({
-      where: { email: userData.email },
+      where: { ...userData },
     });
 
     if (exists) {
@@ -62,7 +62,7 @@ export class PlayersService {
     });
 
     if (!exists) {
-      throw new BadRequestException('Invalid email! Please try again!');
+      throw new BadRequestException('Player not found, Please try again!');
     }
 
     const updatedPlayer = await this.prisma.player.update({
