@@ -1,5 +1,5 @@
-# Tenis ranking 🎾
-
+# Tennis ranking 🎾
+![tennis ball](./ball.png)
 ## Tecnologias usada ⚙️
 
 ### Framework 
@@ -14,5 +14,28 @@
 
 ## Como usar 🧑‍💻
 
+### Clone repo
 
-## EM DESENVOLVIMENTO ⚠️
+```
+git clone https://github.com/Zendered/tenis-ranking.git
+```
+
+### Instalando dependencias
+
+`npm install` ou `yarn install`
+
+### Usando docker
+
+```
+docker-compose up
+```
+
+### Testar a api
+
+```
+http://localhost:3001/api/doc
+```
+
+
+
+> Ainda em desenvolvimento ⚠️
